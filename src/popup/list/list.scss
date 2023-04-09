@@ -1,0 +1,44 @@
+@import '../main/popup.scss';
+
+.ListRoot {
+  border-bottom: 1px solid $mainColor;
+}
+
+.ListContent {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  .bookmarkName {
+    font-size: 15px;
+    font-weight: 400;
+    width: 20%;
+    padding-left: 10px;
+  }
+
+  .bookmarkShortcut {
+    font-size: 10px;
+    font-weight: 200;
+    width: 20%;
+  }
+
+  .bookmarkUrl {
+    font-size: 10px;
+    font-weight: 200;
+    width: 55%;
+  }
+
+  .awesomeFont {
+    margin-top: 3px;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+
+.listRootActive {
+  height: 155px;
+}

@@ -1,0 +1,61 @@
+@import '../style/input.scss';
+@import '../style/button.scss';
+
+$formInputWidth: '40px';
+$formInputHeight: '20px';
+
+$formButtonWidth: '15px';
+$formButtonHeight: '10px';
+
+.formWrap {
+  display: block;
+}
+
+.listForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center
+}
+
+.listFormSubmit {
+  display: none;
+}
+
+.name, .shortcut, .url {
+  @include inputStyle($formInputWidth, $formInputHeight);
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 5px;
+
+  &::before {
+    content: attr(data-title);
+    display: block;
+
+  }
+
+}
+
+label#name, label#shortcut, label#url {
+  width: 60px;
+  height: 26px;
+}
+
+.formName, .formShortcut, .formUrl {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .editButton, .deleteButton {
+    @include buttonStyle($formButtonWidth, $formButtonHeight);
+    background: $mainColor;
+    margin-left: 5px;
+  }
+}
+

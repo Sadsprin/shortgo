@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+$mainColor: #5d5d5d;
+
+#popupRoot {
+  width: 300px;
+  height: 300px;
+  max-height: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-top: 50px;
+  font-family: 'Jua', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

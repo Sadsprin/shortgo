@@ -1,0 +1,17 @@
+@import '../style/button.scss';
+@import '../list/form.scss';
+
+.addPageTitle {
+  margin: 10px;
+}
+
+.addButton {
+  @include buttonStyle($formButtonWidth, $formButtonHeight);
+  float: right;
+  margin-right: 20px;
+}
+
+.backward {
+  width: 20px;
+  height: 20px;
+}

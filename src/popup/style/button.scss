@@ -1,0 +1,6 @@
+
+@mixin buttonStyle($buttonWidth, $buttonHeight) {
+  padding: $buttonHeight, $buttonWidth !important;
+  border-radius: 5px;
+  color: black;
+}

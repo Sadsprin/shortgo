@@ -1,0 +1,21 @@
+{
+  "name": "address-bar-search",
+  "description": "it is useful for using Bookmark. instead of click icons that we used, we input shortcut in address bar",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "webNavigation"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "main.html",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self' 'wasm-unsafe-eval'; unsafe-inline 'ws://localhost';",
+    "connect-src": "https://localhost:8097/"
+  }
+}

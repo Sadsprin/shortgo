@@ -1,0 +1,13 @@
+@import '../main/popup.scss';
+@import '../main//popup.scss';
+
+@mixin inputStyle($inputWidth, $inputHeight) {
+  width: $inputWidth;
+  height: $inputHeight;
+  border: 1px solid $mainColor;
+  
+  &:focus {
+    outline: 0;
+  }
+
+}
